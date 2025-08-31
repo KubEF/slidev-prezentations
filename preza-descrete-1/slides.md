@@ -4,7 +4,7 @@ theme: default
 
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-# background: https://cover.sli.dev
+background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
 title: Дискретная математика, практика 1
 info: |
@@ -22,12 +22,17 @@ mdc: true
 seoMeta:
   # By default, Slidev will use ./og-image.png if it exists,
   # or generate one from the first slide if not found.
-  ogImage: auto
-  # ogImage: https://cover.sli.dev
+  # ogImage: auto
+  ogImage: https://cover.sli.dev
 fonts:
   mono: JetBrains Mono
+---
+
+## Практика по дискретной математике 1
+
+---
 layout: image-right
-image: /qr_code.png
+image: /qrCode.png
 ---
 
 # Представлюсь
