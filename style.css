@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #069494 0%, #9EFCFF 100%);
     min-height: 100vh;
     padding: 40px 20px;
     color: #333;
@@ -170,9 +170,9 @@ body {
     animation: slideDown 0.3s ease forwards;
 }
 
-.presentation-link:nth-child(1) { animation-delay: 0.1s; }
+/* .presentation-link:nth-child(1) { animation-delay: 0.1s; }
 .presentation-link:nth-child(2) { animation-delay: 0.2s; }
-.presentation-link:nth-child(3) { animation-delay: 0.3s; }
+.presentation-link:nth-child(3) { animation-delay: 0.3s; } */
 
 .footer {
     text-align: center;
