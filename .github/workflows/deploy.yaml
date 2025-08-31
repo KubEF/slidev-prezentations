@@ -61,6 +61,11 @@ jobs:
       #     folder: dist
       #   env:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Copy main page to dist
+        run: |
+          cp index.html dist/
+          cp style.css dist/
+          
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
