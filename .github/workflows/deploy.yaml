@@ -1,0 +1,66 @@
+name: Deploy Slidev presentations to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Предоставляем разрешения для развертывания на Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Разрешаем только одно одновременное развертывание
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: preza-descrete-1/package-lock.json
+
+      - name: Find all presentation directories
+        id: find-dirs
+        run: |
+          # Ищем все папки внутри 'docs', в которых есть файл slides.md
+          DIRS=$(find . -maxdepth 2 -name "slides.md" -exec dirname {} \; | jq -R -s -c 'split("\n")[:-1]')
+          echo "dirs=$DIRS" >> $GITHUB_OUTPUT
+
+      - name: Install and build all presentations
+        run: |
+          DIRS=${{ steps.find-dirs.outputs.dirs }}
+          echo "Found directories: $DIRS"
+          
+          for DIR in $(echo $DIRS | jq -r '.[]'); do
+            echo "Building $DIR..."
+            cd $DIR
+            npm ci
+            npm run build
+            # Создаем директорию и копируем результат сборки
+            mkdir -p ../dist/$DIR
+            cp -r dist/* ../dist/$DIR/
+            cd ../
+          done
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
