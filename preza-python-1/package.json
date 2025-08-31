@@ -3,6 +3,7 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "build_gh_pages": "slidev build --base /slidev-presentations/preza-python-1",
     "build": "slidev build --download=false",
     "dev": "slidev --open",
     "export": "slidev export"
