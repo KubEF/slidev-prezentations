@@ -27,7 +27,7 @@ seoMeta:
 fonts:
   mono: JetBrains Mono
 layout: image-right
-image: ./image.png
+image: ./qr_code.png
 ---
 
 # Представлюсь
