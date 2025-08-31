@@ -1,6 +1,8 @@
 ---
 # You can also start simply with 'default'
-theme: default
+theme: seriph
+themeConfig:
+  primary: '#069494'
 
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
@@ -8,7 +10,7 @@ background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
 title: Дискретная математика, практика 1
 info: |
-  ## Презентация для первой практике
+  ## Презентация для первой практики
 # apply unocss classes to the current slide
 # background: https://cover.sli.dev
 # https://sli.dev/features/drawing
@@ -25,7 +27,11 @@ seoMeta:
   # ogImage: auto
   ogImage: https://cover.sli.dev
 fonts:
+  sans: Robot
   mono: JetBrains Mono
+favicon: /graph.svg
+# layout: intro
+# image: https://cover.sli.dev
 ---
 
 ## Практика по дискретной математике 1
@@ -113,7 +119,8 @@ image: /qrCode.png
 Примеры
 
 1. "Больше или равно" над натуральными числами $a \geq b \Leftrightarrow (a, b) \in \mathbb{N}\times\mathbb{N}$
-2. $\dots$
+2. "Являются базисом" над $n$-мерным пространством $R \subset \mathbb{R}^n \times \dots \times \mathbb{R}^n$
+3. "Образуют квадрат" над плоскостью
 </v-click>
 
 ---
