@@ -46,6 +46,7 @@ jobs:
             echo "Building $DIR..."
             cd $DIR
             npm ci
+            npm i -D playwright-chromium
             npm run build_gh_pages
             # Создаем директорию и копируем результат сборки
             mkdir -p ../dist/$DIR
