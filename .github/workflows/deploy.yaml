@@ -30,16 +30,16 @@ jobs:
           cache: 'npm'
           cache-dependency-path: preza-descrete-1/package-lock.json
 
-      - name: Find all presentation directories
-        id: find-dirs
-        run: |
-          # Ищем все папки внутри 'docs', в которых есть файл slides.md
-          DIRS=$(find . -maxdepth 2 -name "slides.md" -exec dirname {} \; )
-          echo "dirs=$DIRS" >> $GITHUB_OUTPUT
+      # - name: Find all presentation directories
+      #   id: find-dirs
+      #   run: |
+      #     # Ищем все папки внутри 'docs', в которых есть файл slides.md
+      #     DIRS=$(find . -maxdepth 2 -name "slides.md" -exec dirname {} \; )
+      #     echo "dirs=$DIRS" >> $GITHUB_OUTPUT
 
       - name: Install and build all presentations
         run: |
-          DIRS=${{ steps.find-dirs.outputs.dirs }}
+          DIRS=$(find . -maxdepth 2 -name "slides.md" -exec dirname {} \; )
           echo "Found directories: $DIRS"
           
           for DIR in $(echo $DIRS); do
