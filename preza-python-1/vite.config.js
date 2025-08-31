@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/slidev-prezentations/preza-descrete-1/',
+  base: '/slidev-prezentations/preza-python-1/',
 })
