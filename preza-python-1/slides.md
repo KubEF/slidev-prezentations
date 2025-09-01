@@ -10,9 +10,6 @@ background: https://cover.sli.dev
 title: Python практика 1
 info: |
   ## Практика по Python 1
-# apply unocss classes to the current slide
-# class: text-center
-# https://sli.dev/features/drawing
 drawings:
   persist: false
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
@@ -29,6 +26,7 @@ fonts:
   mono: JetBrains Mono
 addons:
   - slidev-addon-python-runner
+favicon: /python-icon.svg
 ---
 
 # Практика по Python 1
@@ -108,7 +106,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 <template #1>
 
-Интерпретатор не проверяет типы, получишь ошибку в run-time
+Интерпретатор не проверяет типы, получишь ошибку в runtime
 
 ```python {monaco-run}
 def imposter():
