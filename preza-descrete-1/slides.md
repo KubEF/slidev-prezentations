@@ -30,8 +30,6 @@ fonts:
   sans: Robot
   mono: JetBrains Mono
 favicon: /graph.svg
-# layout: intro
-# image: https://cover.sli.dev
 ---
 
 ## Практика по дискретной математике 1
@@ -245,3 +243,9 @@ $$
 (P(0) \land (\forall n \in \mathbb{N} \ P(n) \to P(n + 1))) \to \forall n \in \mathbb{N} \ P(n)
 $$
 </v-click>
+
+---
+layout: image
+image: /qr-code-group.png
+backgroundSize: contain
+---
