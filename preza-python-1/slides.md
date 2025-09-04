@@ -92,10 +92,10 @@ The last comment block of each slide will be treated as slide notes. It will be 
   - Если используете не своё имя в Telegram, представляйтесь, кто Вы и откуда!
 - Гориховский Вячеслав Игоревич
   - Почта: gorihovskyvyacheslav@gmail.com
-  - tg: [@EfKub](https://t.me/EfKub)
+  - tg: [@Viacheslav_I_Gorikhovskii](https://Viacheslav_I_Gorikhovskii)
 - Кубышкин Ефим Алексеевич
   - Почта: st098235@student.spbu.ru
-  - tg: [@Viacheslav_I_Gorikhovskii](https://Viacheslav_I_Gorikhovskii)
+  - tg: [@EfKub](https://t.me/EfKub)
 </div>
 
 <center>
