@@ -628,7 +628,7 @@ git branch -M main # перезаписывает имя главной ветк
 git push --set-upstream origin main # -u сокращение для --set-upstream
 ```
 
-- Если вам не дают запушить джае при правильном пароле, то надо сгенерировать [access token](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-a-user-access-token-for-a-github-app#about-user-access-tokens): `settings` $\to$ `developer setting` $\to$ `personal access token` $\to$ `tokens (classic)` $\to$ `generate new token` $\to$ обязательно выбрать `repo` в разрешениях $\to$ `generate`
+- Если вам не дают запушить даже при правильном пароле, то надо сгенерировать [access token](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-a-user-access-token-for-a-github-app#about-user-access-tokens): `settings` $\to$ `developer setting` $\to$ `personal access token` $\to$ `tokens (classic)` $\to$ `generate new token` $\to$ обязательно выбрать `repo` в разрешениях $\to$ `generate`
 - Этот токен нужно скопировать и вставлять вместо пароля
 - Если не хотите так, то настройте [доступ по ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 
