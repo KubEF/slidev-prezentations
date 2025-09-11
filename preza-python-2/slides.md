@@ -276,8 +276,6 @@ git config --global --edit
 - В конфиге меняем всё под себя
 
 ```vim [C:\Users\<user>\.gitconfig or ~/.gitconfig]
-[init]
-        defaultBranch = main
 [user]
         name = "<Name Surname>"
         email = <example@mail.ru>
@@ -626,7 +624,7 @@ transition: slide-up
 
 ```sh
 git remote add origin https://github.com/<your-username>/test_repo.git 
-git branch -M main # перезаписывает имя главной ветки на main, нам необязательно
+git branch -M main # перезаписывает имя главной ветки на main
 git push --set-upstream origin main # -u сокращение для --set-upstream
 ```
 
