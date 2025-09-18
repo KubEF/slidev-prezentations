@@ -36,7 +36,7 @@ hideInToc: true
 
 ---
 layout: image-right
-image: ./branches.svg
+image: /branches.svg
 backgroundSize: 80%
 ---
 
@@ -96,12 +96,12 @@ backgroundSize: 80%
 
 <template #0>
 
-<img src="./pre_merged.svg" style="width:100%; height:auto;">
+<img src="/pre_merged.svg" style="width:100%; height:auto;">
 </template>
 
 <template #1>
 
-<img src="./merge.svg" style="width:100%; height:auto;">
+<img src="/merge.svg" style="width:100%; height:auto;">
 </template>
 
 </v-switch>
@@ -139,12 +139,12 @@ backgroundSize: 80%
 
 <template #0>
 
-<img src="./pre_merged.svg" style="width:100%; height:auto;">
+<img src="/pre_merged.svg" style="width:100%; height:auto;">
 </template>
 
 <template #1>
 
-<img src="./rebase.svg" style="width:100%; height:auto;">
+<img src="/rebase.svg" style="width:100%; height:auto;">
 </template>
 
 </v-switch>
