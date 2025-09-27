@@ -1,9 +1,9 @@
 {
-  "name": "preza-python-1",
+  "name": "preza-clash",
   "type": "module",
   "private": true,
   "scripts": {
-    "build_gh_pages": "slidev build --base /slidev-prezentations/preza-python-2",
+    "build_gh_pages": "slidev build --base /slidev-prezentations/preza-clash",
     "build": "slidev build --download=false",
     "dev": "slidev --open",
     "export": "slidev export --with-clicks"
