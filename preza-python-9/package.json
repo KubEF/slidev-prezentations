@@ -1,0 +1,22 @@
+{
+  "name": "preza-python-9",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build_gh_pages": "slidev build --base /slidev-prezentations/preza-python-9",
+    "build": "slidev build --download=false",
+    "dev": "slidev --open",
+    "export": "slidev export --with-clicks"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.1.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "slidev-addon-python-runner": "^0.1.3",
+    "vue": "^3.5.18"
+  },
+  "devDependencies": {
+    "@iconify-json/logos": "^1.2.9",
+    "playwright-chromium": "^1.55.0"
+  }
+}
