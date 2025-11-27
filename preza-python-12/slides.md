@@ -52,7 +52,7 @@ hideInToc: true
 - **Коллизия** — для разных значений получили одинаковое значение хеша
 
 <center>
-<img alt="alt text" src="./hash_table.svg">
+<img alt="alt text" src="/hash_table.svg">
 </center>
 
 ---
@@ -80,7 +80,7 @@ hideInToc: true
 - `i` используется в качестве индекса в H: `H[i % N] = value`
 
 <center>
-<img src="./hash_table1.svg" alt="">
+<img src="/hash_table1.svg" alt="">
 </center>
 
 ---
@@ -92,7 +92,7 @@ hideInToc: true
 - Вместо списка можно использовать динамический массив или сбалансированное дерево поиска
 
 <center>
-<img src="./separate_chasing.svg" alt="">
+<img src="/separate_chasing.svg" alt="">
 </center>
 
 ---
@@ -113,7 +113,7 @@ hideInToc: true
 </div>
 
 <center>
-<img src="./open_addressing.svg" alt="" >
+<img src="/open_addressing.svg" alt="" >
 </center>
 
 </div>
