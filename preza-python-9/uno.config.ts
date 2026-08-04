@@ -1,1 +1,0 @@
-../shared/uno.config.ts

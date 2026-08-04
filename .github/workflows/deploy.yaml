@@ -45,14 +45,13 @@ jobs:
           DIRS=$(find . -maxdepth 2 -name "slides.md" -exec dirname {} \; )
           echo "Found directories: $DIRS"
           
-          for DIR in $(echo $DIRS); do
+          for RAW_DIR in $(echo $DIRS); do
+            DIR=${RAW_DIR#./}
             echo "Building $DIR..."
-            cd $DIR
-            npm run build_gh_pages
+            npx slidev build "$DIR/slides.md"
             # Создаем директорию и копируем результат сборки
-            mkdir -p ../dist/$DIR
-            cp -r dist/* ../dist/$DIR/
-            cd ../
+            mkdir -p "dist/$DIR"
+            cp -r "$DIR/dist/"* "dist/$DIR/"
           done
 
       # - name: Deploy pages
