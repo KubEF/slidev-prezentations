@@ -1,0 +1,23 @@
+{
+  "name": "slidev-prezentations",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "preza-*"
+  ],
+  "dependencies": {
+    "@slidev/cli": "^52.1.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "slidev-addon-python-runner": "^0.1.3",
+    "slidev-theme-takahashi": "^1.0.0",
+    "vue": "^3.5.18"
+  },
+  "devDependencies": {
+    "@iconify-json/logos": "^1.2.9",
+    "playwright-chromium": "^1.55.0"
+  },
+  "allowScripts": {
+    "playwright-chromium@1.62.1": true
+  }
+}

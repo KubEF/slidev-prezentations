@@ -28,7 +28,10 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: preza-descrete-1/package-lock.json
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
 
       # - name: Find all presentation directories
       #   id: find-dirs
@@ -45,8 +48,6 @@ jobs:
           for DIR in $(echo $DIRS); do
             echo "Building $DIR..."
             cd $DIR
-            npm ci
-            # npm i -D playwright-chromium
             npm run build_gh_pages
             # Создаем директорию и копируем результат сборки
             mkdir -p ../dist/$DIR
